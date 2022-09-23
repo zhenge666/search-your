@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+  #微服务名
+  application:
+    name: search-your
+
+#服务端口、线程数
+server:
+  port: 9091
+  tomcat:
+    threads:
+      min-spare: 100
+      max: 300
+
+#FeignClient超时配置(ms)
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 1000
